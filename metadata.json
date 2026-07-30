@@ -1,0 +1,6 @@
+{
+  "name": "BdSmartLeadX-02",
+  "description": "Production-ready lead management and intelligence system built with Supabase authentication, RBAC, and modular architecture.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
