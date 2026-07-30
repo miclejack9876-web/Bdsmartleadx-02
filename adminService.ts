@@ -1,4 +1,4 @@
-import { getSupabaseClient } from './supabaseClient';
+import { getSupabaseClient } from '../supabaseClient';
 import { UserProfile, UserRole } from './auth';
 import { SystemMetrics, AuditLogEntry, UserManagementFilter } from './admin';
 
@@ -177,4 +177,4 @@ export class AdminService {
       createdAt: log.created_at,
     }));
   }
-            }
+  }
