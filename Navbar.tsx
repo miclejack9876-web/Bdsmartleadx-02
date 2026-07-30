@@ -1,5 +1,5 @@
 import React from 'react';
-import { useAuth } from '../../hooks/useAuth';
+import { useAuth } from '../hooks/useAuth';
 import { Shield, User, LogOut, Search, Bell } from 'lucide-react';
 
 export function Navbar() {
@@ -56,4 +56,4 @@ export function Navbar() {
       </div>
     </nav>
   );
-}
+            }
