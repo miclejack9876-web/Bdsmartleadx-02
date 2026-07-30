@@ -1,5 +1,5 @@
 import React from 'react';
-import { useAuth } from '../../hooks/useAuth';
+import { useAuth } from './useAuth';
 import { Wallet, Globe, FileCheck, CheckCircle2, ShieldCheck, ArrowUpRight, TrendingUp } from 'lucide-react';
 
 export function OverviewDashboard() {
@@ -69,4 +69,4 @@ export function OverviewDashboard() {
       </div>
     </div>
   );
-}
+              }
