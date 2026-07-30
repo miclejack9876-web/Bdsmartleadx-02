@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
-import { useAuth } from '../hooks/useAuth';
-import { useRole } from '../hooks/useRole';
-import { MainLayout } from '../components/layout/MainLayout';
-import { ProtectedRoute } from '../components/auth/ProtectedRoute';
-import { RoleGuard } from '../components/auth/RoleGuard';
-import { AuthModal } from '../components/auth/AuthModal';
-import { UserManagement } from '../components/admin/UserManagement';
-import { GlobalJobFeed } from '../components/user/GlobalJobFeed';
-import { OverviewDashboard } from '../components/user/OverviewDashboard';
-import { SubmissionsReview } from '../components/user/SubmissionsReview';
+import { useAuth } from './useAuth';
+import { useRole } from './useRole';
+import { MainLayout } from './MainLayout';
+import { ProtectedRoute } from './ProtectedRoute';
+import { RoleGuard } from './RoleGuard';
+import { AuthModal } from './AuthModal';
+import { UserManagement } from './UserManagement';
+import { GlobalJobFeed } from './GlobalJobFeed';
+import { OverviewDashboard } from './OverviewDashboard';
+import { SubmissionsReview } from './SubmissionsReview';
 import { APP_ROUTES } from './routes';
-import { validateEnvironment } from '../lib/env';
+import { validateEnvironment } from './env';
 import { Database, Shield, Server, FolderTree, KeyRound, CheckCircle2, AlertCircle, Clock, ShieldAlert } from 'lucide-react';
 
 export function AppShell() {
@@ -137,4 +137,4 @@ export function AppShell() {
       </div>
     </MainLayout>
   );
-}
+         }
