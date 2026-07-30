@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { SubmissionsService } from '../../services/submissionsService';
-import { TaskSubmission } from '../../types/offers';
-import { useAuth } from '../../hooks/useAuth';
+import { SubmissionsService } from './submissionsService';
+import { TaskSubmission } from './offers';
+import { useAuth } from './useAuth';
 import { 
   FileCheck, 
   CheckCircle2, 
@@ -417,4 +417,4 @@ export function SubmissionsReview() {
       )}
     </div>
   );
-}
+    }
