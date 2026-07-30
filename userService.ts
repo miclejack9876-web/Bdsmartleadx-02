@@ -1,6 +1,6 @@
-import { getSupabaseClient } from '../lib/supabase/client';
-import { UserProfile } from '../types/auth';
-import { UserPreferences } from '../types/user';
+import { getSupabaseClient } from './supabaseClient';
+import { UserProfile } from './auth';
+import { UserPreferences } from './user';
 
 export class UserService {
   private static client = getSupabaseClient();
@@ -64,4 +64,4 @@ export class UserService {
 
     return true;
   }
-}
+      }
