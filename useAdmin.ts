@@ -1,7 +1,7 @@
 import { useState, useCallback } from 'react';
-import { UserProfile, UserRole } from '../types/auth';
-import { SystemMetrics, AuditLogEntry, UserManagementFilter } from '../types/admin';
-import { AdminService } from '../services/adminService';
+import { UserProfile, UserRole } from './auth';
+import { SystemMetrics, AuditLogEntry, UserManagementFilter } from './admin';
+import { AdminService } from './adminService';
 
 export function useAdmin() {
   const [metrics, setMetrics] = useState<SystemMetrics | null>(null);
