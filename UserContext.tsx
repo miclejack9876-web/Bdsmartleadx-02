@@ -1,6 +1,6 @@
 import React, { createContext, ReactNode } from 'react';
-import { useAuth } from '../hooks/useAuth';
-import { useUser } from '../hooks/useUser';
+import { useAuth } from './useAuth';
+import { useUser } from './useUser';
 
 type UserContextType = ReturnType<typeof useUser>;
 
