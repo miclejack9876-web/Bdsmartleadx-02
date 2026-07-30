@@ -1,7 +1,7 @@
 import { useState, useCallback } from 'react';
-import { UserProfile } from '../types/auth';
-import { UserPreferences } from '../types/user';
-import { UserService } from '../services/userService';
+import { UserProfile } from './auth';
+import { UserPreferences } from './user';
+import { UserService } from './userService';
 
 export function useUser(userId?: string) {
   const [preferences, setPreferences] = useState<UserPreferences>({
@@ -44,4 +44,4 @@ export function useUser(userId?: string) {
     updatePreferences,
     updateProfile,
   };
-}
+        }
