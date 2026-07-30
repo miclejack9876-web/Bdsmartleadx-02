@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-import { useAuth } from '../../hooks/useAuth';
+import { useAuth } from './useAuth';
 import { PendingApprovalNotice } from './PendingApprovalNotice';
 
 interface ProtectedRouteProps {
@@ -40,4 +40,4 @@ export function ProtectedRoute({ children, fallback, allowPending = false }: Pro
   }
 
   return <>{children}</>;
-}
+      }
