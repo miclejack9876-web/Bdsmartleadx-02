@@ -1,6 +1,6 @@
-import { getSupabaseClient } from '../lib/supabase/client';
-import { UserProfile, UserRole } from '../types/auth';
-import { SystemMetrics, AuditLogEntry, UserManagementFilter } from '../types/admin';
+import { getSupabaseClient } from './supabaseClient';
+import { UserProfile, UserRole } from './auth';
+import { SystemMetrics, AuditLogEntry, UserManagementFilter } from './admin';
 
 export class AdminService {
   private static client = getSupabaseClient();
@@ -177,4 +177,4 @@ export class AdminService {
       createdAt: log.created_at,
     }));
   }
-}
+                     }
