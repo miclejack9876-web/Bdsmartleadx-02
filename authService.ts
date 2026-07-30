@@ -1,5 +1,5 @@
-import { getSupabaseClient } from '../lib/supabase/client';
-import { SignInCredentials, SignUpCredentials, UserProfile, AuthResponse } from '../types/auth';
+import { getSupabaseClient } from './client';
+import { SignInCredentials, SignUpCredentials, UserProfile, AuthResponse } from './auth';
 
 export class AuthService {
   private static client = getSupabaseClient();
@@ -137,4 +137,4 @@ export class AuthService {
     const { error } = await AuthService.client.auth.resetPasswordForEmail(email);
     return { error };
   }
-}
+        }
