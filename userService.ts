@@ -1,4 +1,4 @@
-import { getSupabaseClient } from './supabaseClient';
+import { getSupabaseClient } from '../supabaseClient';
 import { UserProfile } from './auth';
 import { UserPreferences } from './user';
 
