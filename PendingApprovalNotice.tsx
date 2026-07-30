@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useAuth } from './useAuth';
+import { useAuth } from '../hooks/useAuth';
 import { ShieldAlert, RefreshCw, LogOut, Clock, CheckCircle, Mail, AlertTriangle } from 'lucide-react';
 
 export function PendingApprovalNotice() {
@@ -114,4 +114,4 @@ export function PendingApprovalNotice() {
       </div>
     </div>
   );
-          }
+        }
