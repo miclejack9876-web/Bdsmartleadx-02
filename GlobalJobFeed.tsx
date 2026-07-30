@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { OffersService } from '../../services/offersService';
-import { WalletService } from '../../services/walletService';
-import { Offer, UserWallet } from '../../types/offers';
-import { useAuth } from '../../hooks/useAuth';
+import { OffersService } from './offersService';
+import { WalletService } from './walletService';
+import { Offer, UserWallet } from './offers';
+import { useAuth } from './useAuth';
 import { TaskSubmissionModal } from './TaskSubmissionModal';
 import { PostOfferModal } from './PostOfferModal';
 import { 
@@ -79,8 +79,7 @@ export function GlobalJobFeed() {
   return (
     <div className="space-y-6" id="global-job-feed-view">
       {/* Toast Feedback */}
-      {toastMessage && (
-        <div className="bg-emerald-950/90 border border-emerald-500 text-emerald-200 px-4 py-3 rounded-xl flex items-center justify-between shadow-xl animate-fade-in">
+      {toastMessage && (<div className="bg-emerald-950/90 border border-emerald-500 text-emerald-200 px-4 py-3 rounded-xl flex items-center justify-between shadow-xl animate-fade-in">
           <div className="flex items-center space-x-2 text-xs font-semibold">
             <CheckCircle2 className="w-4 h-4 text-emerald-400" />
             <span>{toastMessage}</span>
