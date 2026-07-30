@@ -177,4 +177,4 @@ export class AdminService {
       createdAt: log.created_at,
     }));
   }
-                     }
+            }
