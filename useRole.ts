@@ -1,5 +1,5 @@
 import { useAuth } from './useAuth';
-import { UserRole } from '../types/auth';
+import { UserRole } from './auth';
 
 const ROLE_RANK: Record<UserRole, number> = {
   user: 1,
