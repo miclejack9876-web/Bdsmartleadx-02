@@ -1,8 +1,8 @@
 import React from 'react';
-import { AuthProvider } from './context/AuthContext';
-import { UserProvider } from './context/UserContext';
-import { AdminProvider } from './context/AdminContext';
-import { AppShell } from './app/AppShell';
+import { AuthProvider } from './AuthContext';
+import { UserProvider } from './UserContext';
+import { AdminProvider } from './AdminContext';
+import { AppShell } from './AppShell';
 
 export default function App() {
   return (
