@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { useAdmin } from '../../hooks/useAdmin';
-import { UserRole, ApprovalStatus } from '../../types/auth';
+import { useAdmin } from './useAdmin';
+import { UserRole, ApprovalStatus } from './auth';
 import { 
   Users, 
   ShieldCheck, 
