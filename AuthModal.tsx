@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useAuth } from '../../hooks/useAuth';
+import { useAuth } from './useAuth';
 import { 
   User, 
   Mail, 
@@ -109,7 +109,6 @@ export function AuthModal({ onSuccess, defaultTab = 'signin' }: AuthModalProps) 
             <LogIn className="w-3.5 h-3.5" />
             <span>Sign In</span>
           </button>
-
           <button
             type="button"
             onClick={() => handleTabChange('register')}
@@ -260,4 +259,4 @@ export function AuthModal({ onSuccess, defaultTab = 'signin' }: AuthModalProps) 
       </div>
     </div>
   );
-}
+      }
