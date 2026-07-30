@@ -1,5 +1,5 @@
 import React, { createContext, ReactNode } from 'react';
-import { useAdmin } from '../hooks/useAdmin';
+import { useAdmin } from './useAdmin';
 
 export const AdminContext = createContext<ReturnType<typeof useAdmin> | undefined>(undefined);
 
